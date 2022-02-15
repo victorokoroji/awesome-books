@@ -21,3 +21,25 @@ function fillBooks() {
   }
 }
 fillBooks();
+
+function storeBooks(e) {
+  e.preventDefault();
+  let existingBooks = JSON.parse(localStorage.getItem('book-data'));
+  const title = form.elements.name.value;
+  const author = form.elements.author.value;
+  const book = { title, author, counter };
+
+  existingBooks = existingBooks === null ? [] : existingBooks;
+
+  if (
+    !(existingBooks.filter((book) => book.title === title && book.author === author).length > 0)
+  ) {
+    counter += 1;
+    book.counter = counter;
+    existingBooks.push(book);
+  }
+  localStorage.setItem('book-data', JSON.stringify(existingBooks));
+  fillBooks();
+}
+
+form.addEventListener('submit', storeBooks);
