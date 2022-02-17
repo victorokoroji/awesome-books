@@ -1,0 +1,202 @@
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.cdnfonts.com/css/Lato");
+
+:root {
+  --gray: #00000075;
+  --margin-nav: 1%;
+  --black: #000;
+  --blue: blue;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  margin: var(--margin-nav);
+  margin-bottom: 0;
+  padding: var(--margin-nav);
+  border: solid 3px var(--gray);
+}
+
+nav > .left-nav {
+  flex: 1;
+}
+
+.page-title {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+nav > .right-nav {
+  display: flex;
+  column-gap: 10px;
+}
+
+.right-nav > .border-item {
+  padding-right: 10px;
+  border-right: solid 1px var(--black);
+}
+
+.right-nav li a:hover {
+  color: var(--blue);
+}
+
+.current-date {
+  display: block;
+  float: right;
+  margin: var(--margin-nav);
+  margin-top: 5px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 99vw;
+  height: auto;
+  overflow-y: hidden;
+  padding: 1%;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1%;
+  border: solid 3px var(--black);
+}
+
+.main-container {
+  margin-top: 30px;
+}
+
+.main-container h1 {
+  text-align: center;
+  font-size: 28px;
+  padding-top: 20px;
+}
+
+.book-list {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  overflow-y: scroll;
+}
+
+.contact-info {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-info > * {
+  width: 50vw;
+}
+
+.info-contact {
+  margin: 50px;
+}
+
+.info-contact > ul {
+  list-style: circle;
+  margin: auto;
+  padding: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 30px auto 10px auto;
+}
+
+td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+  font-weight: bolder;
+}
+
+td:nth-child(2) {
+  text-align: center;
+}
+
+td button {
+  padding: 5px 10px;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.form-container {
+  display: none;
+}
+
+#form {
+  width: 30%;
+  margin: 30px auto;
+}
+
+#form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#form input {
+  width: 100%;
+  padding: 10px;
+}
+
+#form button {
+  padding: 7px 20px;
+  float: right;
+  clear: both;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: green;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+#home {
+  color: blue;
+}
+
+@media only screen and (max-width: 768px) {
+  #form {
+    width: 50%;
+  }
+}
