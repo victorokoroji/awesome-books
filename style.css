@@ -140,8 +140,8 @@ table {
 
 td {
   text-align: left;
-  padding: 8px;
-  border: 1px solid #ddd;
+  padding: 5px;
+  border: 1px solid rgb(31, 10, 10);
   font-weight: bolder;
 }
 
