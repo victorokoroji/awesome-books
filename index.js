@@ -1,5 +1,5 @@
-import Book from '../modules/app.js';
-import { DateTime } from '../node_modules/luxon/build/es6/luxon.js';
+import Book from './modules/app.js';
+import { DateTime } from './node_modules/luxon/build/es6/luxon.js';
 
 const bookObj = new Book();
 bookObj.fillBooks();
@@ -19,4 +19,3 @@ const currentDate = date.toLocaleString(
   (DateTime.DATETIME_FULL_WITH_SECONDS.timeZoneName = undefined),
 );
 document.getElementById('time-val').innerHTML = currentDate;
-
