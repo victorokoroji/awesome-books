@@ -1,6 +1,4 @@
-import {Book} from '../modules/app.js'; 
-import {myDate} from '../modules/app.js'
-
+import { Book, myDate } from '../modules/app.js';
 
 const bookObj = new Book();
 bookObj.fillBooks();
@@ -14,4 +12,4 @@ const diplayContainer = (item) => {
 
 window.diplayContainer = diplayContainer;
 
-document.getElementById('time-val').innerHTML = myDate()
+document.getElementById('time-val').innerHTML = myDate();
