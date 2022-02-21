@@ -1,4 +1,4 @@
-import { DateTime } from '../modules/luxon/build/es6/luxon.js';
+import { DateTime } from './luxon/build/es6/luxon.js';
 
 export class Book {
   constructor(title, author) {

@@ -1,4 +1,4 @@
-import { Book, myDate } from '../modules/app.js';
+import { Book, myDate } from './modules/app.js';
 
 const bookObj = new Book();
 bookObj.fillBooks();
