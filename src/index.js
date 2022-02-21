@@ -19,3 +19,4 @@ const currentDate = date.toLocaleString(
   (DateTime.DATETIME_FULL_WITH_SECONDS.timeZoneName = undefined),
 );
 document.getElementById('time-val').innerHTML = currentDate;
+
