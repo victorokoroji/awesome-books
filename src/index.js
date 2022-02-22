@@ -1,6 +1,6 @@
-import Book from './book.js';
-import './style.css'
 import { DateTime } from 'luxon';
+import Book from './book.js';
+import './style.css';
 
 const bookObj = new Book();
 bookObj.fillBooks();
