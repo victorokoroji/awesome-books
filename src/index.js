@@ -1,6 +1,6 @@
-import Book from './modules/app.js';
-
-import { DateTime } from './modules/luxon/build/es6/luxon.js';
+import Book from './book.js';
+import './style.css'
+import { DateTime } from 'luxon';
 
 const bookObj = new Book();
 bookObj.fillBooks();
