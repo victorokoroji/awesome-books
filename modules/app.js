@@ -1,5 +1,6 @@
 
-export class Book {
+
+class Book {
   constructor(title, author) {
     this.title = title;
     this.author = author;
@@ -91,3 +92,5 @@ updateSection = (item) => {
   activeSection.style.display = 'flex';
 }
 }
+
+export default Book;
