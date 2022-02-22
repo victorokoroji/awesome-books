@@ -92,12 +92,3 @@ updateSection = (item) => {
   activeSection.style.display = 'flex';
 }
 }
-
-export function myDate() {
-  const date = DateTime.now();
-  const currentDate = date.toLocaleString(
-    DateTime.DATETIME_FULL_WITH_SECONDS,
-    (DateTime.DATETIME_FULL_WITH_SECONDS.timeZoneName = undefined),
-  );
-  return currentDate;
-}
