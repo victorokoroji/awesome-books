@@ -24,4 +24,3 @@ const myDate = () => {
 };
 
 myDate();
-
