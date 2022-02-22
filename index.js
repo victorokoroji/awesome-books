@@ -1,4 +1,4 @@
-import { Book, myDate } from './modules/app.js';
+import { Book } from './modules/app.js';
 
 const bookObj = new Book();
 bookObj.fillBooks();
@@ -12,4 +12,14 @@ const diplayContainer = (item) => {
 
 window.diplayContainer = diplayContainer;
 
-document.getElementById('time-val').innerHTML = myDate();
+const myDate = () => {
+  const date = DateTime.now();
+  const currentDate = date.toLocaleString(
+    DateTime.DATETIME_FULL_WITH_SECONDS,
+    (DateTime.DATETIME_FULL_WITH_SECONDS.timeZoneName = undefined),
+  );
+  document.getElementById('time-val').innerHTML = currentDate;
+}
+
+myDate()
+
