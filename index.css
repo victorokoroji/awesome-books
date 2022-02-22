@@ -108,7 +108,6 @@ footer {
 .book-list {
   display: flex;
   justify-content: center;
-  height: 50vh;
   overflow-y: scroll;
 }
 
@@ -150,7 +149,7 @@ td:nth-child(2) {
 }
 
 td button {
-  padding: 5px 10px;
+  padding: 10px;
   background-color: red;
   border: none;
   border-radius: 5px;
