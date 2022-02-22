@@ -1,5 +1,7 @@
 import { Book } from './modules/app.js';
 
+import { DateTime } from './modules/luxon/build/es6/luxon.js';
+
 const bookObj = new Book();
 bookObj.fillBooks();
 
