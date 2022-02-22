@@ -21,7 +21,7 @@ const myDate = () => {
     (DateTime.DATETIME_FULL_WITH_SECONDS.timeZoneName = undefined),
   );
   document.getElementById('time-val').innerHTML = currentDate;
-}
+};
 
-myDate()
+myDate();
 
