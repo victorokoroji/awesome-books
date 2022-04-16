@@ -32,8 +32,8 @@ body {
 nav {
   display: flex;
   margin-bottom: 0;
-  padding: 1.5%;
-  background-color: #6f06e7;
+  padding: 15px;
+  background-color: #6f06e7d8;
 }
 
 nav > .left-nav {
@@ -67,17 +67,14 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 99vw;
-  height: auto;
-  overflow-y: hidden;
-  padding: 1%;
-}
-
-.footer-box {
+  width: 100%;
+  background-color: #6f06e7;
   display: flex;
-  justify-content: flex-start;
-  padding: 1%;
-  border: solid 3px #000;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  color: white;
+  font-weight: bolder;
 }
 
 .main-container {
@@ -88,6 +85,7 @@ footer {
   text-align: center;
   font-size: 28px;
   padding-top: 20px;
+  color: #6f06e7;
 }
 
 .book-list {
