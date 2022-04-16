@@ -20,7 +20,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #000;
+   color: white;;
 }
 
 body {
@@ -31,10 +31,9 @@ body {
 
 nav {
   display: flex;
-  margin: 1%;;
   margin-bottom: 0;
-  padding: 1%;;
-  border: solid 3px #00000075;
+  padding: 1.5%;
+  background-color: #6f06e7;
 }
 
 nav > .left-nav {
@@ -53,11 +52,7 @@ nav > .right-nav {
 
 .right-nav > .border-item {
   padding-right: 10px;
-  border-right: solid 1px #000;
-}
-
-.right-nav li a:hover {
-  color: blue;
+  border-right: solid 1px #fff;
 }
 
 .current-date {
