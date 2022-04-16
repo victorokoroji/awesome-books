@@ -4,10 +4,10 @@
 	"description": "This is a book shelve website dedicated to store collection of books, add new books and delete books.",
 	"private": true,
 	"scripts": {
-		"build": "webpack --mode production",
-		"dev": "webpack --mode development",
-		"serve": "webpack serve",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"watch": "webpack --watch",
+		"start": "webpack serve --open",
+		"build": "webpack"
 	},
 	"repository": {
 		"type": "git",
@@ -37,6 +37,7 @@
 		"webpack-dev-server": "^4.7.4"
 	},
 	"dependencies": {
+		"html-webpack-plugin": "^5.5.0",
 		"luxon": "^2.3.0"
 	}
 }
