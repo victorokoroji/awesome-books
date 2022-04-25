@@ -194,6 +194,10 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+  nav {
+    padding-top: 15px;
+  }
+  
   #form {
     width: 90%;
   }
