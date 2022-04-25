@@ -34,7 +34,7 @@ class Book {
 				tableRow.id = `item-${index}`
 				table.appendChild(tableRow)
 				const tableDataDetail = document.createElement('td')
-				tableDataDetail.innerText = `"${book.title}" by ${book.author} `
+				tableDataDetail.textContent = `"${book.title}" by ${book.author} `
 				const tableDatailBtn = document.createElement('td')
 				tableDatailBtn.innerHTML = `<button type="button" id="btn-${index}" class="remove-btn">Remove</button>`
 				tableRow.appendChild(tableDataDetail)
@@ -63,14 +63,13 @@ class Book {
 		existingBooks = existingBooks === null ? [] : existingBooks
 
 		if (
-			!(existingBooks.filter(book => book.title === title && book.author === author).length > 0)
-		) {
+			!(existingBooks.filter(book => book.title === title && book.author === author).length > 0) && (title.trim() !== '' && author.trim() !== ''
+    		)		) {
 			existingBooks.push(book)
 		}
-		localStorage.setItem('book-data', JSON.stringify(existingBooks))
-		form.elements.name.value = ''
-		form.elements.author.value = ''
-		this.fillBooks()
+    localStorage.setItem('book-data', JSON.stringify(existingBooks))
+		form.reset()
+    this.fillBooks()
 		const bookListNode = document.querySelector('#book-list')
 		this.updateSection(bookListNode)
 	}
