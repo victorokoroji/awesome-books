@@ -7,11 +7,6 @@ module.exports = {
 	devServer: {
 		static: './dist',
 	},
-	plugins: [
-		new HtmlWebpackPlugin({
-			template: './src/index.html',
-		}),
-	],
 	output: {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'dist'),
@@ -33,4 +28,11 @@ module.exports = {
 			},
 		],
 	},
+	plugins: [
+		new HtmlWebpackPlugin({
+			template: './src/index.html',
+			favicon: './src/images/favicon.ico',
+			filename: 'index.html',
+		}),
+	],
 }
