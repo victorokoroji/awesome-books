@@ -19,10 +19,10 @@ class Book {
 	fillBooks = () => {
 		const strBookList = JSON.parse(localStorage.getItem('book-data'))
 
-    if (strBookList.length === 0) {
+    if ((strBookList === null || strBookList.length) === 0) {
 			const table = document.querySelector('table')
-      table.innerHTML = `<h2 class="message"> You have not stored any book, <br><br> Click on "Add New" to add new book.<h2>`
-      return;
+			table.innerHTML = `<h2 class="message"> You have not stored any book, <br><br> Click on "Add New" to add new book.<h2>`
+			return
 		}
 
 		if (strBookList !== null && strBookList.length > 0) {
