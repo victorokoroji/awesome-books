@@ -81,7 +81,7 @@ class Book {
 		linkList.forEach(node => {
 			node.style.color = '#fff'
 		})
-		item.style.color = 'purple'
+		item.style.color = '#f30ff3'
 		const activeSection = document.querySelector(`.${item.id}`)
 		const contentList = document.querySelectorAll('.content')
 		let titleIndex = 0

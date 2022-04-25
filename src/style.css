@@ -27,13 +27,15 @@ body {
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
+  background: url(./images/bg.jpg), no-repeat;
+  background-size: cover;
 }
 
 nav {
   display: flex;
   margin-bottom: 0;
-  padding: 15px;
-  background-color: #6f06e7d8;
+  padding: 2% 5% ;
+  padding-bottom: 10px;
 }
 
 nav > .left-nav {
@@ -58,23 +60,8 @@ nav > .right-nav {
 .current-date {
   display: block;
   float: right;
-  margin: 1%;
-  margin-top: 5px;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  background-color: #6f06e7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
+  padding-right: 5%;
   color: white;
-  font-weight: bolder;
 }
 
 .main-container {
@@ -85,33 +72,13 @@ footer {
   text-align: center;
   font-size: 28px;
   padding-top: 20px;
-  color: #6f06e7;
+  color: white;
 }
 
 .book-list {
   display: flex;
   justify-content: center;
   overflow-y: scroll;
-}
-
-.contact-info {
-  display: none;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.contact-info > * {
-  width: 50vw;
-}
-
-.info-contact {
-  margin: 50px;
-}
-
-.info-contact > ul {
-  list-style: circle;
-  margin: auto;
-  padding: 30px;
 }
 
 table {
@@ -141,6 +108,11 @@ td button {
 
 tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+  background-color: #290438;
+  color: #fff;
 }
 
 .form-container {
@@ -175,6 +147,46 @@ tr:nth-child(even) {
 
 #home {
   color: blue;
+}
+
+.message {
+  text-align: center;
+}
+
+.contact-info {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-info > * {
+  width: 50vw;
+}
+
+.info-contact {
+  margin: 50px;
+  color: white;
+}
+
+.info-contact > ul {
+  list-style: circle;
+  margin: auto;
+  padding: 30px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #6f06e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  color: white;
+  font-weight: bolder;
 }
 
 @media only screen and (max-width: 768px) {
