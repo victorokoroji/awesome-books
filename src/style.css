@@ -54,9 +54,10 @@ nav > .right-nav {
 	column-gap: 10px;
 }
 
-.border-item a, #contact-info {
+.border-item a,
+#contact-info {
 	border-right: solid 1px #fff;
-  padding-right: 10px;
+	padding-right: 10px;
 }
 
 .current-date {
@@ -202,7 +203,16 @@ footer {
 	}
 
 	.border-item a,
-	#contact-info {
+	#contact-info,
+	#time-val {
 		font-size: 0.7rem;
 	}
+
+	.main-container {
+		margin-top: 80px;
+	}
+
+  table {
+    width: 90%;
+  }
 }
