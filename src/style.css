@@ -220,4 +220,9 @@ footer {
   table {
     width: 90%;
   }
+
+  .contact-info > * {
+    width: 90%;
+    margin: auto;
+  }
 }
