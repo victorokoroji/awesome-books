@@ -15,7 +15,7 @@ In this project, you will be using javascript arrays and object to store the lis
 
 ## Live Demo
 
-[Live Demo Link](https://vickymarz.github.io/awesome-books/)
+[Live Demo Link](https://bookshelve.netlify.app/)
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
