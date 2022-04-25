@@ -154,6 +154,7 @@ tr:nth-child(odd) {
 
 .message {
   text-align: center;
+  color: #bcbcbc;
 }
 
 .contact-info {
