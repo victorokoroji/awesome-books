@@ -33,6 +33,9 @@ module.exports = {
       template: './src/index.html',
       favicon: './src/images/favicon.ico',
       filename: 'index.html',
+      meta: {
+        'og:image': { property: 'og:image', content: './src/images/app_screenshot.png' }, 
+      }
     }),
   ],
 };
