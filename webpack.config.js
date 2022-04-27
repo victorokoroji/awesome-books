@@ -36,7 +36,7 @@ module.exports = {
 			filename: 'index.html',
 		}),
 		new CopyPlugin({
-			patterns: [{ from: './src/images/screenshot.png', to: 'images' }],
+			patterns: [{ from: './src/images/capture.png', to: 'images' }],
 		}),
 	],
 }
